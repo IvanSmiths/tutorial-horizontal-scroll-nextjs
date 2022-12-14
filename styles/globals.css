@@ -7,9 +7,20 @@ body {
   background-color: rgb(30, 30, 30);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
-  --m-small: 1.8rem;
+  --m-big: 13rem;
+  --m-small: 2rem;
   --layout: 10%;
+
+  --h-big: clamp(4rem, 15vw, 22rem);
+  --h-line-big: clamp(4rem, 15vw, 22rem);
+
+  --h-medium: clamp(3rem, 8vw, 18rem);
+  --h-line-medium: clamp(4rem, 10vw, 22rem);
 }
 
 a {
@@ -17,35 +28,30 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4 p,
+p,
 span,
+h3,
 a {
   color: rgb(213, 213, 213);
-}
-
-h1 {
-  font-family: "Didot", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: antiquewhite;
-  font-size: clamp(4rem, 15vw, 22rem);
   font-weight: 100;
-  line-height: clamp(4rem, 15vw, 22rem);
 }
 
+h1,
 h2 {
   font-family: "Didot", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: antiquewhite;
-  font-size: clamp(4rem, 10vw, 22rem);
   font-weight: 100;
-  line-height: clamp(4rem, 12vw, 22rem);
+  color: antiquewhite;
 }
 
-* {
-  box-sizing: border-box;
+h1 {
+  font-size: var(--h-big);
+  line-height: var(--h-line-big);
+}
+
+h2 {
+  font-size: var(--h-medium);
+  line-height: var(--h-line-medium);
 }
 
 .navbar {
@@ -76,6 +82,7 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: var(--m-big);
 }
 
 .work {
