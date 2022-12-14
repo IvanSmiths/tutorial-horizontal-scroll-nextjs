@@ -9,6 +9,7 @@ body {
 
 :root {
   --m-small: 1.8rem;
+  --layout: 10%;
 }
 
 a {
@@ -22,15 +23,25 @@ h3,
 h4 p,
 span,
 a {
-  color: antiquewhite;
+  color: rgb(213, 213, 213);
 }
 
 h1 {
   font-family: "Didot", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: antiquewhite;
   font-size: clamp(4rem, 15vw, 22rem);
   font-weight: 100;
   line-height: clamp(4rem, 14vw, 22rem);
+}
+
+h2 {
+  font-family: "Didot", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: antiquewhite;
+  font-size: clamp(4rem, 10vw, 22rem);
+  font-weight: 100;
+  line-height: clamp(4rem, 9vw, 22rem);
 }
 
 * {
@@ -41,7 +52,7 @@ h1 {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem 10%;
+  padding: 1rem var(--layout);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,4 +72,30 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.work {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.work__copy {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: var(--layout);
+  width: 60%;
+}
+
+.work__content {
+  height: 100%;
+  padding-right: var(--layout);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.work__content img {
+  width: 55%;
 }
