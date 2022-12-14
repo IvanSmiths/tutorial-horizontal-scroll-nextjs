@@ -5,20 +5,12 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <Link href="/">
-          <a>Home</a>
-        </Link>
+        <Link href="/">Home</Link>
       </div>
       <div className="navbar__links">
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-        <Link href="/works">
-          <a>Works</a>
-        </Link>
-        <Link href="/contact">
-          <a>Contact</a>
-        </Link>
+        <Link href="/about">About</Link>
+        <Link href="/works">Works</Link>
+        <Link href="/contact">Contact</Link>
       </div>
     </nav>
   );
