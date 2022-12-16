@@ -9,16 +9,6 @@ function Works() {
   const scrollRef = useRef(null);
   const triggerRef = useRef(null);
 
-  function useArrayRef() {
-    const topRefs = useRef([]);
-    topRefs.current = [];
-    return [topRefs, (ref) => ref && topRefs.current.push(ref)];
-  }
-
-  const [topRefs, setTopRefs] = useArrayRef();
-
-  console.log(topRefs.current);
-
   useEffect(() => {
     const pin = gsap.fromTo(
       scrollRef.current,
@@ -45,7 +35,7 @@ function Works() {
   return (
     <section ref={triggerRef}>
       <div ref={scrollRef} className="works">
-        <div ref={setTopRefs} className="work">
+        <div className="work">
           <div className="work__copy">
             <h2>Lorem ipsum dolor sit.</h2>
           </div>
@@ -61,7 +51,7 @@ function Works() {
             </div>
           </div>
         </div>
-        <div ref={setTopRefs} className="work">
+        <div className="work">
           <div className="work__copy">
             <h2>Lorem ipsum dolor sit.</h2>
           </div>

@@ -11,6 +11,8 @@ body {
   box-sizing: border-box;
 }
 
+@import "./basic.css";
+
 :root {
   --m-big: 13rem;
   --m-small: 2rem;
