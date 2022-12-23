@@ -12,7 +12,6 @@ body {
 }
 
 @import "./basic.css";
-@import "./normal.css";
 
 :root {
   --m-big: 13rem;

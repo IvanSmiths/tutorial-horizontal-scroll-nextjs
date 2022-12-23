@@ -35,7 +35,7 @@ function Basics() {
   return (
     <section>
       <div className="test" ref={triggerRef}>
-        <div className="works">
+        <div className="works" ref={scrollRef}>
           <div className="work">
             <div className="work__copy">
               <h2>Section 1</h2>
