@@ -34,38 +34,22 @@ function Basics() {
   }, []);
   return (
     <section>
-      <div ref={triggerRef}>
-        <div ref={scrollRef} className="works">
+      <div className="test" ref={triggerRef}>
+        <div className="works">
           <div className="work">
             <div className="work__copy">
-              <h2>Lorem ipsum dolor sit.</h2>
+              <h2>Section 1</h2>
             </div>
             <div className="work__content-outer">
-              <div className="work__content-inner">
-                <img src="/work.jpg" alt="work" />
-                <span className="work__line"></span>
-                <div className="work__details">
-                  <h3>Next.js</h3>
-                  <h3>2022</h3>
-                  <h3>Employee</h3>
-                </div>
-              </div>
+              <div className="work__content-inner"></div>
             </div>
           </div>
           <div className="work">
             <div className="work__copy">
-              <h2>Lorem ipsum dolor sit.</h2>
+              <h2>Section 2</h2>
             </div>
             <div className="work__content-outer">
-              <div className="work__content-inner">
-                <img src="/work.jpg" alt="work" />
-                <span className="work__line"></span>
-                <div className="work__details">
-                  <h3>Next.js</h3>
-                  <h3>2022</h3>
-                  <h3>Employee</h3>
-                </div>
-              </div>
+              <div className="work__content-inner"></div>
             </div>
           </div>
         </div>
