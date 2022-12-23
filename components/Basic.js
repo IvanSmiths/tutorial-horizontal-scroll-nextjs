@@ -23,7 +23,7 @@ function Basics() {
           trigger: triggerRef.current,
           start: "top top",
           end: "6000 top",
-          scrub: 0.6,
+          scrub: 1,
           pin: true,
         },
       }
@@ -34,7 +34,7 @@ function Basics() {
   }, []);
   return (
     <section>
-      <div className="test" ref={triggerRef}>
+      <div className="works__outer" ref={triggerRef}>
         <div className="works" ref={scrollRef}>
           <div className="work">
             <div className="work__copy">

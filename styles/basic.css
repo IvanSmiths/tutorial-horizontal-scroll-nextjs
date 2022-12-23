@@ -1,3 +1,7 @@
+.works__outer {
+  overflow: hidden;
+}
+
 .works {
   display: flex;
   width: 200vw;
