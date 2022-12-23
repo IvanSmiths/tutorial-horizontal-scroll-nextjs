@@ -23,7 +23,7 @@ function Basics() {
           trigger: triggerRef.current,
           start: "top top",
           end: "6000 top",
-          scrub: 0.6,
+          scrub: 1,
           pin: true,
         },
       }
@@ -34,38 +34,22 @@ function Basics() {
   }, []);
   return (
     <section>
-      <div ref={triggerRef}>
-        <div ref={scrollRef} className="works">
+      <div className="works__outer" ref={triggerRef}>
+        <div className="works" ref={scrollRef}>
           <div className="work">
             <div className="work__copy">
-              <h2>Lorem ipsum dolor sit.</h2>
+              <h2>Section 1</h2>
             </div>
             <div className="work__content-outer">
-              <div className="work__content-inner">
-                <img src="/work.jpg" alt="work" />
-                <span className="work__line"></span>
-                <div className="work__details">
-                  <h3>Next.js</h3>
-                  <h3>2022</h3>
-                  <h3>Employee</h3>
-                </div>
-              </div>
+              <div className="work__content-inner"></div>
             </div>
           </div>
           <div className="work">
             <div className="work__copy">
-              <h2>Lorem ipsum dolor sit.</h2>
+              <h2>Section 2</h2>
             </div>
             <div className="work__content-outer">
-              <div className="work__content-inner">
-                <img src="/work.jpg" alt="work" />
-                <span className="work__line"></span>
-                <div className="work__details">
-                  <h3>Next.js</h3>
-                  <h3>2022</h3>
-                  <h3>Employee</h3>
-                </div>
-              </div>
+              <div className="work__content-inner"></div>
             </div>
           </div>
         </div>

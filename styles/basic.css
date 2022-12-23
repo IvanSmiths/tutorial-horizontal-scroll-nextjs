@@ -1,4 +1,20 @@
+.works__outer {
+  overflow: hidden;
+}
+
 .works {
   display: flex;
   width: 200vw;
+}
+
+.work {
+  width: 100vw;
+  height: 100vh;
+}
+
+.work__copy {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
