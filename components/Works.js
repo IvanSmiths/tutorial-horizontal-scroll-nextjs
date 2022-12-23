@@ -33,7 +33,7 @@ function Works() {
     };
   }, []);
   return (
-    <section ref={triggerRef}>
+    <section ref={triggerRef} className="works__outer">
       <div ref={scrollRef} className="works">
         <div className="work">
           <div className="work__copy">
